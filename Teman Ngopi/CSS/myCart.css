@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color:#101820FF; //black
+}
+footer{
+  text-align: center;
+  background-color: #F2AA4CFF;   //orange
+  color: Black;
+}
+.container{
+  width: 100%;
+  height: minmax(45px,6vh);
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  background-color: #F2AA4CFF;   //orange
+}
+.navheader{
+  height: 12%;
+  display: flex; //flexible
+  align-items: center;
+}
+.logo{
+  float:left;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #101820FF;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #101820FF; //black
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+h1 {
+  color:white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 8%;
+}
+.pageNav {
+  padding-left: 8%;
+  color: white;
+}
+table {
+  padding-left: 8%;
+  color: Black;
+  background-color: #ffda7c;
+  padding: 10px;
+  line-height: 30px;
+  border-radius: 15px;
+}
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food{
+  width: 100px;
+}
+#amount{
+  width: 150px;
+  padding-left: 2.5%;
+}
+.button {
+  text-align: center;
+}
+#confirmorder {
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F2AA4CFF;
+}
+#confirmorder:hover {
+  background-color: orange;
+}
+#confirmorder:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#proceed {
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F2AA4CFF;
+}
+#proceed:hover {
+  background-color: orange;
+}
+#proceed:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.totalanddiscount {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  padding: 50px;
+}
+#discount, #total, #totalbefore {
+  padding: 30px 0;
+  border: solid black;
+  border-radius: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="CSS\about.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navheader">
+        <img src="Image/Logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="about.html"><strong>About Us</strong></a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class = "title">
+      <h1>About Us</h1>
+    </div>
+    <div class="background">
+      <h2>Background</h2>
+      <br>
+      <p>We are a crew that started out small, just like any other business. One of our founding members came up with the idea to create a game-changing coffee shop. Ever since, we aim to give you only the best coffee in town. </p>
+    </div>
+    <div class="visMis">
+      <h2>Vision and Mission</h2>
+      <br>
+      <p>We strive to ensure that our services are tiptop whenever it comes to serving our products to our customers. However, we do not forget the environment while doing so. Our target is to be 100% environmental-friendly and inspire other businesses to join us in the cause as well.</p>
+    </div>
+    <div class="sdg">
+      <h2>Sustainable Implementation</h2>
+      <br>
+      <p>We use recycleable material for our product packaging to ensure the safety of our environment. We only provide paper straw on demand from customers. Our packaging is fully made from biodegredable material, so it will not be a waste and threat to the nature.
+        <div class="imageRow">
+          <div class="image1">
+            <img id="image1" src="Image/Straw.jpg">
+            <h3>Biodegredable Straw</h3>
+          </div>
+          <div class="image2">
+            <img id="image2" src="Image/Bag.jpg">
+            <h3>Biodegredable Packaging</h3>
+          </div>
+          <div class="image3">
+            <img id="image3" src="Image/Cup.jpg" >
+            <h3>Biodegredable Cup</h3>
+          </div>
+        </div>
+    </div>
+    <div class="findUs">
+      <h2>Where to find us</h2>
+      <div id="googleMap" style="width:100%;height:400px;"></div>
+      <script>
+        function myMap() {
+          var mapProp= {
+            center:new google.maps.LatLng(37.532600,127.024612),
+            zoom:5,
+            };
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY8ZEdDDSjyGbzZJE-lrZNvKEM4iwMKs4&callback=myMap"></script>
+    </div>
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>

@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color: #101820FF; //black
+}
+footer{
+  text-align: center;
+  background-color: #F2AA4CFF;   //orange
+  color: Black;
+}
+.container{
+  width: 100%;
+  height: minmax(45px,6vh);
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  background-color: #F2AA4CFF;   //orange
+}
+.navheader{
+  height: 12%;
+  display: flex; //flexible
+  align-items: center;
+}
+.logo{
+  float: left;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #101820FF; //black
+  font-size: 20px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #101820FF; //black
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+.rowwithBackground{
+  display: flex;
+  padding: 15%;
+  align-items: left;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://perfectdailygrind.com/wp-content/uploads/2019/02/coffee-bar-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.homeBox{
+  text-align: left;
+  width: auto;
+  font-size: 50px;
+}
+.rowinBackground{
+  text-align: right;
+  color: #fff;
+  font-size: 20px;
+  box-sizing: content-box;
+  width: 100%;
+}
+h1 {color: #F2AA4CFF;   //orange}
+button{
+  width: 120px;
+  color: #000;
+  font-size: 15px;
+  padding: 12px 0;
+  background: #C0C0C0; //silver
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.heading1{
+  padding-left: 8%;
+  margin-top: 15px;
+}
+h4.menu {text-align: center; color: #101820FF; //black}
+.rowCard{
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.cardMenu {
+  background-color: #F2AA4CFF;   //orange
+  box-shadow: 0 4px 8px 0;
+  transition: transform 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 15px;
+}
+.cardMenu:hover {transform: translateY(-10px);}
+.productimage {border-radius: 5px 5px 0 0; //roundedimage}
+
+div.containerMenu {
+  padding: : 20px 16px;
+  text-align: center;
+}
+.quotebackground{
+  color: #F2AA4CFF;   //orange
+  display: flex;
+  padding: 15%;
+  border-radius: 30px;
+  align-items: left;
+  background-image:  url("https://media.istockphoto.com/photos/coffee-bean-picture-id466732980?b=1&k=20&m=466732980&s=170667a&w=0&h=n0DEkBlpc9udEzyUBy61oBkmGfWvTsCvBRCVJbCupVA=");
+  background-size: cover;
+  background-position: center;
+}
+.quote{
+  color: #6f4e37;
+  border-radius: 15px;
+  text-align: center;
+  padding: 3%;
+  background-color:#F2AA4CFF;   //orange
+}
+div.quote{
+  font-size: 30px;
+}
+h3.contactUs{
+  font-size: 30px;
+  color: #fff;
+  padding-top: 15px;
+}
+.contact{
+  display: grid;
+  padding: 5%;
+  text-align: center;
+}
+.button{
+  cursor: pointer;
+}
+.logosingleimage{
+  width: 30%;
+  padding-top: 15px;
+}
+.footer{
+  text-align: center;
+  background-color: #F2AA4CFF;   //orange
+}

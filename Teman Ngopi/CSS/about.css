@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color: #101820FF; //black
+}
+footer{
+  text-align: center;
+  background-color: #F2AA4CFF;   //orange
+  color: Black;
+}
+.container{
+  width: 100%;
+  height: minmax(45px,6vh);
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  background-color: #F2AA4CFF;   //orange
+}
+.navheader{
+  height: 12%;
+  display: flex; //flexible
+  align-items: center;
+}
+.logo{
+  float:left;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #101820FF;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #101820FF; //black
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+.title {
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 50px;
+  color: white;
+}
+.background {
+  padding-left: 8%;
+  margin-top: 60px;
+  line-height: 30px;
+  color:white;
+  padding-right: 8%;
+  text-align: justify;
+}
+.visMis {
+  padding-left: 8%;
+  line-height: 30px;
+  margin-top: 60px;
+  color:white;
+  padding-right: 8%;
+  text-align: justify;
+}
+.sdg {
+  padding-left: 8%;
+  line-height: 30px;
+  margin-top: 60px;
+  color:white;
+  padding-right: 8%;
+  text-align: justify;
+}
+.findUs {
+  padding-left: 8%;
+  color:white;
+  margin-top: 60px;
+  padding-right: 8%;
+  text-align: justify;
+}
+.map {
+  padding-left: 8%;
+  padding-right: 8%;
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.image1{
+  padding: 20px;
+  text-align: center;
+}
+.image2{
+  padding: 20px;
+  text-align: center;
+}
+.image3{
+  padding: 20px;
+  text-align: center;
+}
+#image1 {
+  width: 400px;
+}
+#image2 {
+  width: 400px;
+  height: 280px;
+}
+#image3 {
+  width: 400px;
+}

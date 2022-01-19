@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body{
+  background-color: #101820FF; //black
+}
+footer{
+  text-align: center;
+  background-color: #F2AA4CFF;   //orange
+  color: Black;
+}
+.container{
+  width: 100%;
+  height: minmax(45px,6vh);
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  background-color: #F2AA4CFF;   //orange
+}
+.navheader{
+  height: 12%;
+  display: flex; //flexible
+  align-items: center;
+}
+.logo{
+  float:left;
+  width: auto;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #101820FF;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #101820FF; //black
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+h2 {
+  color:black;
+  text-align: center;
+}
+.content{
+  display: flex;
+  align-items: center;
+  margin: 7%;
+}
+.contactcontainer {
+  color:black;
+  line-height: 20px;
+}
+.formcontainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color:#F2AA4CFF;
+  border: 10px solid #F2AA4CFF;
+  border-radius: 10px;
+}
+.form {
+  line-height: 30px;
+  width: 100%;
+}
+.button, .contactcontainer{
+  text-align: center;
+}
+#message {
+  height: 100px;
+  width: 100%;
+}
+#name {
+  width: 100%;
+}
+#email {
+  width: 100%;
+}
+#submit {
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #ffda7c;
+}
+#submit:hover {
+  background-color: orange;
+}
+#submit:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

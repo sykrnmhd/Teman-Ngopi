@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="CSS\contact.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <script type="text/javascript" src="JS\audio.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navheader">
+        <img src="Image/Logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html"><strong>Contact</strong></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="content">
+      <div>
+        <video width=auto height="600" loop autoplay muted>
+          <source src="Video/Coffee Video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="formcontainer">
+        <h2>Contact Us</h2><br>
+        <div class="form">
+          <form class="contact">
+            <input id="name" type="text" name="fname" value="Name"><br>
+            <input id="email" type="text" name="email" value="Email"><br>
+            <input id="message" type="text" name="message" value="Message"><br>
+            <br>
+            <div class="button">
+              <button id="submit" type="button" onclick="playAudio()">Submit</button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <div class="contactcontainer">
+          <p><b>Contact</b></p>
+          <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+          <p>Phone No : +82 93 7201 7492</p>
+          <p><b>Location</b></p>
+          <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+        </div>
+      </div>
+    </div>
+    <audio id="myAudio">
+      <source src="Audio/Sound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      var x = document.getElementById("myAudio");
+      function playAudio() {
+        x.play();
+      }
+    </script>
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>

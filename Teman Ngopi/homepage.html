@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teman Ngopi</title>
+    <link rel="stylesheet" type="text/css" href="CSS\homepage.css">
+    <audio id="myAudio">
+      <source src="Audio/Music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      var x = document.getElementById("myAudio");
+      x.volume = 0.1;
+      function playAudio() {
+          x.play();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navheader">
+        <img src="Image\logo.png" onclick="playAudio()" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html"><strong>Home</strong></a></li>
+            <li><a href="Order.html">Order Now</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="rowwithBackground">
+      <div class="homeBox">
+        <h1>Teman Ngopi</h1>
+        <div class="rowinBackground">
+          <p class=highlightMenu>singgah singgah dulu</p>
+        </div>
+         <button type="button" name="order now button" onclick="document.location='Order.html'; " class="button"><span>Order Now</span></button>
+      </div>
+      </div>
+    </div>
+    <div class="heading1">
+      <h1>Customer Favourites</h1>
+    </div>
+    <div class="rowCard">
+      <div class="cardMenu">
+        <a href="#" onclick="document.location='Order.html'"><img src="Image/Cappucino.jpg" class="productimage" style="width:100%"></a>
+        <div class="containerMenu">
+          <h4 class="menu">Cappucino</h4>
+        </div>
+      </div>
+      <div class="cardMenu">
+        <a href="#" onclick="document.location='Order.html'"><img src="Image\Latte.jpg" class="productimage" style="width:100%"></a>
+        <div class="containerMenu">
+          <h4 class="menu">Latte</h4>
+        </div>
+      </div>
+      <div class="cardMenu">
+        <a href="#" onclick="document.location='Order.html'"><img src="Image/Americano.jpg" class="productimage" style="width:100%"></a>
+        <div class="containerMenu">
+          <h4 class="menu">Americano</h4>
+        </div>
+      </div>
+      <div class="cardMenu">
+        <a href="#" onclick="document.location='Order.html'"><img src="Image/Bagel.jpg" class="productimage" style="width:100%"></a>
+        <div class="containerMenu">
+          <h4 class="menu">Bagel</h4>
+        </div>
+      </div>
+    </div>
+    <div class="quotebackground">
+      <div class="quote">
+        <p style="font-family: cursive">MORE ESPRESSO</p>
+        <p style="font-family: cursive">LESS DEPRESSO</p>
+        <p style="font-family: cursive">MORE CAFFEINE</p>
+        <p style="font-family: cursive">LESS STRESSINE</p>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="text">
+        <h3 class="contactUs">How can we help</h3>
+        <button type="button" name="contact us"  onclick="document.location='contact.html'" class="button"><span>Contact Us</span></button>
+      </div>
+      <div>
+        <img src="Image/logo single.png" class="logosingleimage">
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>

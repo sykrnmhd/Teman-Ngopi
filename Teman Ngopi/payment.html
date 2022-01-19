@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="CSS\payment.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navheader">
+        <img src="Image/Logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Order.html"><strong>Order Now</strong></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="heading">
+      <h1>Payment</h1>
+    </div>
+    <div class="pageNav">
+      <a href='Order.html'>Order now</a>
+      &#8250
+      <a href="myCart.html">My Cart</a>
+      &#8250;
+      <a href="#">Payment</a>
+    </div>
+    <div class="addressContainer">
+      <form class="address">
+        <fieldset>
+          <h2>Delivery Address</h2>
+          <input type="text" name="fname" id="fname" value="Full Name">
+          <input type="text" name="phoneNum" id="phoneNum" value="Phone Number"><br>
+          <input type="text" name="state" id="state" value="State">
+          <input type="text" name="area" id="area" value="Area"><br>
+          <input type="text" style="width:96%" name="postCode" id="postCode" value="Postal Code"><br>
+          <input type="text" style="width:96%" name="houseDetails" id="houseDetails" value="House Number, Building, Street Name">
+        </fieldset>
+      </form>
+    </div>
+    <div class="payment">
+      <fieldset>
+        <h2>Payment Method</h2>
+        <div class="paymentbutton">
+          <button type="button" onclick="dis('1')" class="cod" name="cod" value="1">Cash On Delivery</button> <!--Color stay orange when clicked-->
+          <button type="button" onclick="dis('2')" class="banktransfer" name="banktransfer" value="2" >Account Transfer</button> <!--Color stay orange when clicked-->
+        </div>
+      </fieldset>
+    </div>
+    <br>
+    <div class="submit">
+          <button type="button" class="submitbutton" onclick="myFunction()" ><span>Place Order</span></button> <!--alert box comes up showing order successful and thank you -->
+          <script>
+            var val;
+            function dis(val)
+            { console.log(val);
+              document.getElementById("result").value=val;
+            }
+            function myFunction() {
+              let x = document.getElementById("result").value
+              console.log(x);
+              if (x== 1){alert("Your order have been received. Please pay to our rider with exact amount. Thank you and Enjoy your Coffee");}
+              else if (x == 2) {
+                alert("Your order have been received. Please transfer to this Maybank account number 187748659034. Thank you and Enjoy your Coffee");
+              }
+              else {
+                alert(" select a Payment Method first!");
+              }
+            }
+          </script>
+    </div>
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <h1 id="result"></h1>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>

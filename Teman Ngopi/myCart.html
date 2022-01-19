@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My cart</title>
+    <script>
+      function myFunction() {
+          coffee1 = document.getElementById("coffee1").value;
+          coffee2 = document.getElementById("coffee2").value;
+          coffee3 = document.getElementById("coffee3").value;
+          coffee4 = document.getElementById("coffee4").value;
+          coffee5 = document.getElementById("coffee5").value;
+
+          frappe1 =  document.getElementById("frappe1").value;
+          frappe2 =  document.getElementById("frappe2").value;
+          frappe3 =  document.getElementById("frappe3").value;
+          frappe4 =  document.getElementById("frappe4").value;
+          frappe5 =  document.getElementById("frappe5").value;
+
+          pastry1 =  document.getElementById("pastry1").value;
+          pastry2 =  document.getElementById("pastry2").value;
+          pastry3 =  document.getElementById("pastry3").value;
+          pastry4 =  document.getElementById("pastry4").value;
+          pastry5 =  document.getElementById("pastry5").value;
+
+          var totalcoffe = 4 * (parseInt(coffee1)+parseInt(coffee2)+parseInt(coffee3)+parseInt(coffee4)+parseInt(coffee5));
+          var totalfrappe = 5 * (parseInt(frappe1)+parseInt(frappe2)+parseInt(frappe3)+parseInt(frappe4)+parseInt(frappe5));
+          var totalpastry = 3 * (parseInt(pastry1)+parseInt(pastry2)+parseInt(pastry3)+parseInt(pastry4)+parseInt(pastry5));
+
+          var total= totalcoffe +totalfrappe+totalpastry;
+
+          if (total > 10)
+          {
+            var discount = (total * 20)/100;
+            var price = total-discount;
+          }
+          else {
+            var discount = 0;
+            var price = total;
+          }
+
+          document.getElementById("totalAmount").innerHTML = "RM" + " " +total;
+          document.getElementById("totalPrice").innerHTML = "RM" + " " + price;
+          document.getElementById("totaldiscount").innerHTML = "RM" + " " + discount;
+
+      }
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="CSS\myCart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wgh@400;700&display=swap">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="navheader">
+        <img src="Image/Logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="order.html"><strong>Order Now</strong></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <h1>My Cart</h1>
+
+    <div class="pageNav">
+      <a href='Order.html'style="color:lightblue">Order now</a>
+      &#8250;
+      <a href="#"style="color:lightblue">My Cart</a>
+    </div>
+
+    <br>
+
+    <table class = "menu">
+      <tr>
+        <th>Coffee & Espresso</th>
+        <th>Quantity</th>
+        <th>Frappe</th>
+        <th>Quantity</th>
+        <th>Pastry</th>
+        <th>Quantity</th>
+      </tr>
+      <br>
+      <tr>
+        <td>Cappucino</td>
+        <td id="amount">
+          <input id="coffee1"  value="0" class = "food" type="number" min="0" max="1000">
+        </td>
+        <td>Cappucino Frappe</td>
+        <td id="amount">
+          <input class = "food" id="frappe1" value="0" type="number" min="0" max="1000">
+        </td>
+        <td>Bagel</td>
+        <td id="amount">
+          <input id= "pastry1" class = "food" value="0"type="number" min="0" max="1000">
+        </td>
+      </tr>
+      <tr>
+        <td>Americano</td>
+        <td id="amount">
+          <input id="coffee2"  value="0" class = "food" type="number" min="0" max="1000">
+        </td>
+        <td>Hazelnut Frappe</td>
+        <td id="amount">
+          <input id="frappe2" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+        <td>Cheese Tart</td>
+        <td id="amount">
+          <input id= "pastry2" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+      </tr>
+      <tr>
+        <td>Kopi Kaw</td>
+        <td id="amount">
+          <input id="coffee3" value="0" class = "food" type="number" min="0" max="1000">
+        </td>
+        <td>Cookies & Cream</td>
+        <td id="amount">
+          <input id="frappe3" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+        <td>Choco Muffin</td>
+        <td id="amount">
+          <input id= "pastry3" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td id="amount">
+          <input id="coffee4" value="0" class = "food" type="number" min="0" max="1000">
+        </td>
+        <td>Choco Java</td>
+        <td id="amount">
+          <input id="frappe4" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+        <td>Croissant</td>
+        <td id="amount">
+          <input id= "pastry4" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+      </tr>
+      <tr>
+        <td>Mocha</td>
+        <td id="amount">
+          <input id="coffee5"value="0"  class = "food" type="number" min="0" max="1000">
+        </td>
+        <td>Cafe Mocha</td>
+        <td id="amount">
+          <input id="frappe5" class = "food" value="0"type="number" min="0" max="1000">
+        </td>
+        <td>Custard</td>
+        <td id="amount">
+          <input id= "pastry5" class = "food" value="0" type="number" min="0" max="1000">
+        </td>
+      </tr>
+  </table>
+
+    <br>
+    <div class="button">
+    <button id="confirmorder" type="button" onClick="myFunction()" >Confirm Order</button>
+
+    <div class="totalanddiscount">
+
+    <h2 id="totalbefore"style="text-align:center; background-color:white;">Amount: <span id="totalAmount"></span> </h2>
+    <h2 id="discount"style="text-align:center; background-color:white;">Discount: <span id="totaldiscount"></span> </h2> <!-- (JS Part) 20% discount for each order after RM 10 -->
+    <h2 id="total"style="text-align:center; background-color:orange;">Total : <span id="totalPrice"></span> </h2> <!--(JS Part) Your total order is RM$$.$$-->
+
+    </div>
+
+    <button  id="proceed" onclick="document.location='payment.html'"type="button" >Proceed</button>
+    </div>
+
+
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>

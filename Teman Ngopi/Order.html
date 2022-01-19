@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Order Now</title>
+    <style media="screen">
+    .cardMenu {
+      width: 200px;
+      height: 230px;
+      display: inline-block;
+      border-radius: 10px;
+      padding: 15px 25px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin: 15px 15px;
+      box-shadow: 0 4px 8px 0;
+      transition: transform 0.3s;
+      background-position: center;
+      background-size: cover;
+    }
+    .cimg1{background-image: url(Image/cappucino.jpg);}
+    .cimg2{background-image: url(Image/Americano.jpg);}
+    .cimg3{background-image: url(Image/Kopi.jpg);}
+    .cimg4{background-image: url(Image/Latte.jpg);}
+    .cimg5{background-image: url(Image/mocha.jpg);}
+    .fimg1{background-image: url(Image/FrappeCappucino.jpg);}
+    .fimg2{background-image: url(Image/FrappeHazelnut.jpg);}
+    .fimg3{background-image: url(Image/FrappeCookiesandCream.jpg);}
+    .fimg4{background-image: url(Image/FrappeChocoJava.jpg);}
+    .fimg5{background-image: url(Image/FrappeMocha.jpg);}
+    .pimg1{background-image: url(Image/Bagel.jpg);}
+    .pimg2{background-image: url(Image/CheeseTart.jpg);}
+    .pimg3{background-image: url(Image/ChocoMuffin.jpg);}
+    .pimg4{background-image: url(Image/Croissant.jpg);}
+    .pimg5{background-image: url(Image/Custard.jpg);}
+    </style>
+    <link rel="stylesheet" type="text/css" href="CSS\order.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navheader">
+        <img src="Image\logo.png" class="logo">
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Order.html"><strong>Order Now</strong></a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <img src="https://images.everydayhealth.com/images/how-to-brew-the-healthiest-cup-of-coffee-1440x810.jpg?w=1110" class="backgroundimg">
+    <div class="myCart">
+        <a href="#" onclick="document.location='myCart.html'"><img src="Image/Cart.png" class="myCartImage"><a>
+    </div>
+    <div class="heading" >
+      <h1>Coffee & Espresso ( RM 4 )</h1>
+    </div>
+    <div class="firstRowCard" onclick="document.location='myCart.html'">
+      <div class="cardMenu cimg1">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Cappucino</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu cimg2">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Americano</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu cimg3">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Kopi KAW</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu cimg4">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Latte</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu cimg5">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Mocha</strong></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="heading">
+      <h1>Frappe ( RM 5 )</h1>
+    </div>
+    <div class="secondRowCard" onclick="document.location='myCart.html'">
+      <div class="cardMenu fimg1">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Cappuccino Frappe</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu fimg2">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Coffee Hazelnut</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu fimg3">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Cookies & Cream</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu fimg4">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Choco Java</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu fimg5">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Cafe Mocha</strong></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="heading">
+      <h1>Pastry ( RM 3 )</h1>
+    </div>
+    <div class="thirdRowCard" onclick="document.location='myCart.html'">
+      <div class="cardMenu pimg1">
+        <div class="containerCoffee1">
+          <div class="text" ><strong>Bagel</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu pimg2">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Cheese Tart</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu pimg3">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Choco Muffin</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu pimg4">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Croissant</strong></div>
+        </div>
+      </div>
+      <div class="cardMenu pimg5">
+        <div class="containerCoffee1">
+          <div class="text"><strong>Custard</strong></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>Teman Ngopi Company. All rights reserved.</p>
+    <p><b>Contact</b></p>
+    <p>Email :<a href="#">alifIzzummy@rocketmail.com</a></p>
+    <p>Phone No : +82 93 7201 7492</p>
+    <p><b>Location</b></p>
+    <p>98-1, Oseongapateu, Yeonho-dong, Suseong-gu, Daegu, Korea</p>
+  </footer>
+</html>
